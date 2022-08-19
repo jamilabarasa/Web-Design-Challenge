@@ -35,7 +35,8 @@ The website, at the top of every page, has a navigation menu that:
     Is responsive (using media queries)
 
 ## Website Deployed :
-The website is deployed to GitHub pages
+The website is deployed to <a href="https://jamilabarasa.github.io/Web-Design-Challenge/" target="_blank">Github Pages</a>
+
 
 ## Visualizations:
 ![plot](assets/images/temp.png)
@@ -45,3 +46,7 @@ The website is deployed to GitHub pages
 ![plot](assets/images/wind.png)
 
 ![plot](assets/images/cloudiness.png)
+
+## Tech Environment Used:
+
+HTML, CSS, Bootstrap, VSCode, GitHub, GitHub pages.
