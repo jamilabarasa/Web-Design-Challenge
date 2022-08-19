@@ -13,48 +13,66 @@
 
 <body>
 
-    <!-- navbar -->
+       <!--Navbar-->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary primary-color">
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="../index.html"><b>
+                <h2>Latitude</h2>
+            </b> </a>
 
-        <button type="button" class="btn btn-success">
-            <a href="../index.html" style="text-decoration: none !important; color: black;">Latitude</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
 
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plot</a>
-                    <div class="dropdown-menu">
-                        <a target="__blank" href="../visualizations/temperature.html" class="dropdown-item">Temperature</a>
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown mr-sm-2">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="color: #fff;">Plots</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a target="__blank" href="../visualizations/temperature.html" class="dropdown-item">Max Temperature</a>
                         <a target="__blank" href="../visualizations/humidity.html" class="dropdown-item">Humidity</a>
                         <a target="__blank" href="../visualizations/cloudiness.html" class="dropdown-item">Cloudiness</a>
-                        <a target="__blank" href="../visualizations/windspeed.html" class="dropdown-item">Windspeed</a>
+                        <a target="__blank" href="../visualizations/windspeed.html" class="dropdown-item">Wind Speed</a>
                     </div>
-                </div>
-                <a target="__blank" href="data.html" class="nav-item nav-link ">Data</a>
-                <a target="__blank" href="compare.html" class="nav-item nav-link ">Comparison</a>
-            </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="../compare.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="../data.html">Data</a>
+                </li>
 
 
-        </div>
+
+            </ul>
+            <!-- Links -->
+
+            <!-- Collapsible content -->
+
     </nav>
-
-    <!-- navbar -->
+    <!--/.Navbar-->
 
     <!-- body -->
 
-    <div class="container">
+    <div class="container mt-3">
         <div class="row row-grid">
 
-            <div class="col-md-8">
+            <div class="col-md-8 bg-light">
                 <div class="box box-left">
                     <section id="Introduction">
-                        <h1> Temperature</h1>
+                        <h1 class="text-primary">Wind Speed</h1>
                         <hr>
                         <figure>
-                            <img id="main" src="Images/Latitude vs. Temperature.png" alt="Latitude vs. Temperature">
+                            <img id="main" src="../assets/images/latitudevswindspeed.jpeg" width="80%" height="300px" alt="Latitude vs. Temperature">
                         </figure>
                         <section id="Summary">
                             <span id="imagetext"> As expected, the weather becomes significantly warmer as one
@@ -73,16 +91,16 @@
             </div>
 
 
-            <div class="col-md-4">
-                <div class="box box-right">
-                    <h6>Visualizations</h6>
+            <div class="col-md-4 mt-3">
+                
+                    <h5 class="text-primary"> <b>Visualizations</b></h5>
                     <hr>
-                    <div class="row">
+                    <div class="row" id="tri">
 
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a target="__blank" href="temperature.html">
-                                    <img id="landing" src="../assets/images/Latitude vs. Temperature.png"
+                                    <img id="landing" src="../assets/images/latitutevstemp.jpeg"
                                         alt="City Latitude vs. Temperature">
                                 </a>
                             </figure>
@@ -90,7 +108,7 @@
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a target="__blank" href="humidity.html">
-                                    <img id="landing" src="../assets/images/Latitude vs. Humidity.png"
+                                    <img id="landing" src="../assets/images/latitudevshumidity.jpeg"
                                         alt="City Latitude vs. Humidity">
                                 </a>
                             </figure>
@@ -98,7 +116,7 @@
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a target="__blank" href="cloudiness.html">
-                                    <img id="landing" src="../assets/images/Latitude vs. Cloudiness.png"
+                                    <img id="landing" src="../assets/images/latitutevscloudness.jpeg"
                                         alt="City Latitude vs. Cloudiness">
                                 </a>
                             </figure>
@@ -106,7 +124,7 @@
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a target="__blank" href="windspeed.html">
-                                    <img id="landing" src="../assets/images/Latitude vs. Windspeed.png"
+                                    <img id="landing" style="border:1px solid #4285F4;" src="../assets/images/latitudevswindspeed.jpeg"
                                         alt="City Latitude vs. Windspeed">
                                 </a>
                             </figure>
@@ -114,7 +132,7 @@
 
 
                     </div>
-                </div>
+                
             </div>
 
         </div>

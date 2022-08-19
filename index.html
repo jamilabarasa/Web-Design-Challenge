@@ -13,105 +13,114 @@
 
 <body>
 
-    <!-- navbar -->
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary primary-color">
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-
-        <button type="button" class="btn btn-success">
-            <a href="index.html" style="text-decoration: none !important; color: black;">Latitude</a>
-        </button>
-            
-      
-
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-                
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plot</a>
-                    <div class="dropdown-menu">
-                        <a target= "__blank" href="/visualizations/temperature.html" class="dropdown-item">Temperature</a>
-                        <a target= "__blank" href="visualizations/humidity.html" class="dropdown-item">Humidity</a>
-                        <a target= "__blank" href="visualizations/cloudness.html" class="dropdown-item">Cloudiness</a>
-                        <a target= "__blank" href="visualizations/windspeed.html" class="dropdown-item">Windspeed</a>
-                    </div>
-                </div>
-                <a target= "__blank" href="data.html" class="nav-item nav-link ">Data</a>
-                <a target= "__blank" href="compare.html" class="nav-item nav-link ">Comparison</a>
-            </div>
-            
-        
-        </div>
-    </nav>
-
-    <!-- navbar -->
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="index.html"><b>
+                    <h2>Latitude</h2>
+                </b> </a>
+    
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+    
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown mr-sm-2">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: #fff;">Plots</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a target="__blank" href="visualizations/temperature.html" class="dropdown-item">Max
+                                Temperature</a>
+                            <a target="__blank" href="visualizations/humidity.html" class="dropdown-item">Humidity</a>
+                            <a target="__blank" href="visualizations/cloudiness.html" class="dropdown-item">Cloudiness</a>
+                            <a target="__blank" href="visualizations/windspeed.html" class="dropdown-item">Wind Speed</a>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="compare.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="data.html">Data</a>
+                    </li>
+    
+    
+    
+                </ul>
+                <!-- Links -->
+    
+                <!-- Collapsible content -->
+    
+        </nav>
+        <!--/.Navbar-->
 
     <!-- body -->
 
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
-            <div class= "col-md-8">
-                <div class = "box box-left">
-                    <section id="Introduction">
-                        <h1> Summary: Latitude vs. X </h1>
+            <div class= "col-md-8 bg-light">
+                
+                    <section>
+                        <h1 class="text-primary"> <span style="font-size: smaller;">Summary</span> : Latitude vs. X </h1>
                         <hr>
                         <figure>
-                            <a target= "__blank" href="Images/landingResize.png" alt="Latitude vs X">
-
-                            </a>
-                            <img src="assets/images/Latitude vs. Temperature.png" width="240" height="240"
+                            <img src="assets/images/latitutevstemp.jpeg" width="200" height="200"
                             alt="Latitude vs. Temperature" title="Landing page" style="float: left"/>
                         </figure>
-                        <section id="Summary">
+                        <section style="font-size: larger;">
                             <p> The purpose of this project was to analyze how weather changes as you get closer to equator.
                                 To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
                                 on over 500 citites.
                             </p>
+                
                             <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. Latitude
                                 Factors we looked at included: temperature, cloudiness, wind_speed and humidity. This site provides
                                 the source data and visualizations created as part of the analysis, as well as explanations and 
                                 descriptions of any trends and correlation witnessed.
                             </p>
-                            <ul>
-                                <li> Max Temperature(F) vs. City Latitude</li>
-                                <li> Humidity (%) vs. City Latitude</li>
-                                <li> Cloudiness (%) vs. City Latitude</li>
-                                <li>Wind Speed (mph) vs. City Latitude</li> 
-
-                            </ul>
                         </section>
+                        
                     </section>
-                </div>
+               
             </div>
-            <div class="col-md-4">
-                <div class= "box box-right">
-                    <h6> Visualizations</h6>
+            <div class="col-md-4 mt-3">
+                <div>
+                    <h5 class="text-primary"> Visualizations</h5>
                     <hr>
                     <div class ="row">
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a target="__blank" href= "visualizations/temperature.html">
-                                    <img id="landing" src="assets/images/Latitude vs. Temperature.png" alt="City Latitude vs. Temperature">
+                                    <img id="landing" src="assets/images/latitutevstemp.jpeg" alt="City Latitude vs. Temperature">
                                 </a>
                             </figure>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a target="__blank" href="visualizations/humidity.html">
-                                    <img id="landing" src="assets/images/Latitude vs. Humidity.png" alt="City Latitude vs. Humidity">
+                                    <img id="landing" src="assets/images/latitudevshumidity.jpeg" alt="City Latitude vs. Humidity">
                                 </a>
                             </figure>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
-                                <a target="__blank" href="visualizations/cloudness.html">
-                                    <img id="landing" src="assets/images/Latitude vs. Cloudiness.png" alt="City Latitude vs. Cloudiness">
+                                <a target="__blank" href="visualizations/cloudiness.html">
+                                    <img id="landing" src="assets/images/latitutevscloudness.jpeg" alt="City Latitude vs. Cloudiness">
                                 </a>
                             </figure>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a target="__blank" href="visualizations/windspeed.html">
-                                    <img id="landing" src="assets/images/Latitude vs. Windspeed.png" alt="City Latitude vs. Windspeed">
+                                    <img id="landing" src="assets/images/latitudevswindspeed.jpeg" alt="City Latitude vs. Windspeed">
                                 </a>
                             </figure>
                         </div>

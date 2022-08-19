@@ -12,109 +12,126 @@
 </head>
 
 <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary primary-color">
 
-    <!-- navbar -->
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="../index.html"><b>
+                <h2>Latitude</h2>
+            </b> </a>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-
-        <button type="button" class="btn btn-success">
-            <a href="../index.html" style="text-decoration: none !important; color: black;">Latitude</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
 
-
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plot</a>
-                    <div class="dropdown-menu">
-                        <a target="__blank" href="../visualizations/temperature.html" class="dropdown-item">Temperature</a>
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown mr-sm-2">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="color: #fff;">Plots</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a target="__blank" href="../visualizations/temperature.html" class="dropdown-item">Max Temperature</a>
                         <a target="__blank" href="../visualizations/humidity.html" class="dropdown-item">Humidity</a>
                         <a target="__blank" href="../visualizations/cloudiness.html" class="dropdown-item">Cloudiness</a>
-                        <a target="__blank" href="../visualizations/windspeed.html" class="dropdown-item">Windspeed</a>
+                        <a target="__blank" href="../visualizations/windspeed.html" class="dropdown-item">Wind Speed</a>
                     </div>
-                </div>
-                <a target="__blank" href="data.html" class="nav-item nav-link ">Data</a>
-                <a target="__blank" href="compare.html" class="nav-item nav-link ">Comparison</a>
-            </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="../compare.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="../data.html">Data</a>
+                </li>
 
 
-        </div>
+
+            </ul>
+            <!-- Links -->
+
+            <!-- Collapsible content -->
+
     </nav>
-
-    <!-- navbar -->
+    <!--/.Navbar-->
 
     <!-- body -->
 
-    <div class="container">
-        <div class= "row row-grid">
+    <div class="container mt-3">
+        <div class="row row-grid">
 
-            <div class= "col-md-8">
-                <div class = "box box-left">
+            <div class="col-md-8">
+                
                     <section id="Introduction">
-                        <h1> Humidity</h1>
+                        <h1 class="text-primary">Humidity</h1>
                         <hr>
                         <figure>
-                            
-                                <img id="main" src="Images/Latitude vs. Humidity.png" alt="Latitude vs. Humidity">
-                            </a>
+                            <img id="main" src="../assets/images/latitudevshumidity.jpeg" width="80%" height="300px"
+                                alt="Latitude vs. Temperature">
                         </figure>
                         <section id="Summary">
-                            <span id= "imagetext"> The graph represents humidity(%) with varying latitude. As per the graph, we can analyse
+                            <p> The graph represents humidity(%) with varying latitude. As per the graph, we can analyse
                                 that the maximum humidity any latitude can have is 100%. The minimum humidity is located
                                 between (-20, -40) and (20, 40).
 
-                            </span>
+                            </p>
                         </section>
 
                     </section>
 
-                </div>
+              
 
             </div>
 
-    
-        <div class="col-md-4">
-            <div class="box box-right">
-                <h6>Visualizations</h6>
+
+            <div class="col-md-4 mt-3">
+                <h5 class="text-primary"><b> Visualizations </b></h5>
                 <hr>
-                <div class="row">   
+                <div class="row">
                     <div class="col-md-6 col-sm-3 col-md-6">
                         <figure>
                             <a href="temperature.html">
-                                <img id="landing-main" src="../assets/images/Latitude vs. Temperature.png" alt="City Latitude vs. Temperature">
+                                <img id="landing-main" src="../assets/images/latitutevstemp.jpeg"
+                                    alt="City Latitude vs. Temperature">
                             </a>
                         </figure>
                     </div>
                     <div class="col-md-6 col-sm-3 col-md-6">
                         <figure>
                             <a href="humidity.html">
-                                <img id="landing-main" src="../assets/images/Latitude vs. Humidity.png " alt="City Latitude vs. Humidity">
+                                <img id="landing-main" style="border:1px solid #4285F4;" src="../assets/images/latitudevshumidity.jpeg"
+                                    alt="City Latitude vs. Humidity">
                             </a>
                         </figure>
                     </div>
-                    <div class= "col-xs-6 col-sm-3 col-md-6">
+                    <div class="col-xs-6 col-sm-3 col-md-6">
                         <figure>
                             <a href="cloudiness.html">
-                                <img id="landing-main" src="../assets/images/Latitude vs. Cloudiness.png" alt=" City Latitude vs. Cloudiness">
+                                <img id="landing-main" src="../assets/images/latitutevscloudness.jpeg"
+                                    alt=" City Latitude vs. Cloudiness">
                             </a>
                         </figure>
                     </div>
-                    <div class ="col-xs-6 col-sm-3 col-md-6">
+                    <div class="col-xs-6 col-sm-3 col-md-6">
                         <figure>
-                            <a href="wind_speed.html">
-                                <img id="landing-main" src="../assets/images/Latitude vs. Windspeed.png" alt=" City Latitude vs. Windspeed">
+                            <a href="windspeed.html">
+                                <img id="landing-main" src="../assets/images/latitudevswindspeed.jpeg"
+                                    alt=" City Latitude vs. Windspeed">
                             </a>
                         </figure>
                     </div>
 
-                    </div>
                 </div>
-                </div>
+            
+        </div>
 
-                </div>
-      
+    </div>
+
 
     </div>
 
